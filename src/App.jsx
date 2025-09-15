@@ -17,7 +17,7 @@ export default function App() {
           Software Engineer • Web
         </p>
         <h1 className="mt-4 text-4xl font-bold">
-          Hi, I’m <span className="text-sky-600">Baiansuluu</span>.
+          Hi, I’m <span className="text-sky-600">Baian</span>.
         </h1>
         <p className="mt-3 max-w-2xl text-slate-600">
           I build fast, accessible web experiences. Here are my projects and how to reach me.
