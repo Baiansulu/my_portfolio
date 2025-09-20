@@ -30,7 +30,7 @@ export default function App() {
         <p className="mt-2 text-slate-500">Houston, TX · Open to internships and junior roles</p>
         <div className="mt-3 flex gap-3 text-slate-500 text-sm">
           <span> <a href="mailto:baansuluu22@gmail.com">baansuluu22@gmail.com</a></span>
-          <span>| 832-919-1050</span>
+          <span>|   832-919-1050</span>
           <a href="https://www.linkedin.com/in/baian-550558227" className="underline">LinkedIn</a>
         </div>
         <div className="mt-6 flex gap-3">
