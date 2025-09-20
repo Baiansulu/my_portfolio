@@ -20,7 +20,7 @@ export default function App() {
           Software Engineer • Web Development
         </p>
         <h1 className="mt-4 text-4xl font-bold">
-          Hi, I’m <span className="text-sky-600">Baiansuluu Bolotbekova</span>.
+          Hi, I’m <span className="text-sky-600">Baiansuluu</span>.
         </h1>
         <p className="mt-3 max-w-2xl text-slate-600">
           Motivated Computer Science student pursuing a BA with a minor in Business Administration. 
