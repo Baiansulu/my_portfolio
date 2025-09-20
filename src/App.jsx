@@ -55,6 +55,33 @@ export default function App() {
         </div>
       </section>
 
+      <section id="experience" className="mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold">Work Experience</h2>
+  <div className="mt-4 space-y-6">
+    <div>
+      <h3 className="font-semibold">Frankly Speaking Agency — Intern</h3>
+      <p className="text-sm text-slate-500">Atlanta, GA · Dec 2022 – Feb 2023</p>
+      <ul className="list-disc pl-5 mt-2 text-slate-600 text-sm">
+        <li>Supported development and optimization of web pages for marketing campaigns reaching 5,000+ users.</li>
+        <li>Improved UX with HTML, CSS, and JavaScript, reducing page load times by 15%.</li>
+        <li>Collaborated with cross-functional teams to deliver projects aligned with business goals.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section id="education" className="mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold">Education</h2>
+  <p className="mt-2 text-slate-600">
+    <strong>North American University — Texas</strong><br />
+    BA in Computer Science (Minor in Business Administration) — Expected 2026
+  </p>
+  <p className="text-sm text-slate-500 mt-1">
+    Relevant coursework: Web Development, Software Engineering, Database Systems
+  </p>
+</section>
+
+
       <section id="skills" className="mx-auto max-w-5xl px-4 pb-16">
         <h2 className="text-2xl font-semibold">Skills</h2>
         <ul className="mt-4 flex flex-wrap gap-2 text-sm text-slate-700">
