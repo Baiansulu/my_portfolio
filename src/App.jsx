@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 export default function App() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -107,7 +108,7 @@ export default function App() {
           Email: <a className="underline" href="mailto:baansuluu22@gmail.com">baansuluu22@gmail.com</a>
         </p>
       </section>
-
+<Contact />
       <footer className="border-t bg-white">
         <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-600">
           © {new Date().getFullYear()} Baiansuluu
