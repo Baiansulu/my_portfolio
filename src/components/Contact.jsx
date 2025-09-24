@@ -1,32 +1,4 @@
-import { useState } from "react";
-
 export default function Contact() {
-  const [status, setStatus] = useState({ type: "", msg: "" });
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
-    if (!data.get("name")?.trim() || !data.get("email")?.trim() || !data.get("message")?.trim()) {
-      setStatus({ type: "error", msg: "Please fill out all required fields." });
-      return;
-    }
-
-    const res = await fetch("https://formspree.io/f/your_form_id", {
-      method: "POST",
-      headers: { Accept: "application/json" },
-      body: data,
-    });
-
-    if (res.ok) {
-      form.reset();
-      setStatus({ type: "success", msg: "Thanks! Your message has been sent." });
-    } else {
-      setStatus({ type: "error", msg: "Something went wrong. Please try again." });
-    }
-  }
-
   return (
     <section id="contact" className="mx-auto max-w-md px-4 py-12">
       <h2 className="text-2xl font-semibold mb-2">Contact</h2>
@@ -34,31 +6,71 @@ export default function Contact() {
         I usually reply within 24–48 hours. Your info stays private.
       </p>
 
-      <form onSubmit={handleSubmit} className="grid gap-4">
-        <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+      <form
+        action="https://formsubmit.co/baansuluu22@gmail.com"
+        method="POST"
+        className="grid gap-4"
+      >
+        <input
+          type="text"
+          name="_honey"
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://myportfolio-gilt-iota.vercel.app/#contact"
+        />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message from your portfolio"
+        />
 
         <div>
-          <label htmlFor="name" className="block text-sm font-medium">Name</label>
+          <label htmlFor="name" className="block text-sm font-medium">
+            Name
+          </label>
           <input
-            id="name" name="name" type="text" required autoComplete="name"
+            id="name"
+            name="name"
+            type="text"
+            required
+            autoComplete="name"
             className="mt-1 w-full rounded-lg border px-3 py-2 text-sm outline-none focus:ring"
             placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium">Email</label>
+          <label htmlFor="email" className="block text-sm font-medium">
+            Email
+          </label>
           <input
-            id="email" name="email" type="email" required autoComplete="email"
+            id="email"
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
             className="mt-1 w-full rounded-lg border px-3 py-2 text-sm outline-none focus:ring"
             placeholder="you@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium">Message</label>
+          <label htmlFor="message" className="block text-sm font-medium">
+            Message
+          </label>
           <textarea
-            id="message" name="message" required rows={4}
+            id="message"
+            name="message"
+            required
+            rows={4}
             className="mt-1 w-full rounded-lg border px-3 py-2 text-sm outline-none focus:ring"
             placeholder="Tell me a bit about your project…"
           />
@@ -70,14 +82,13 @@ export default function Contact() {
         >
           Send message
         </button>
-
-        <p aria-live="polite" className={`text-xs ${status.type === "error" ? "text-rose-600" : "text-emerald-600"}`}>
-          {status.msg}
-        </p>
       </form>
 
       <div className="mt-6 text-xs text-slate-600">
-        Prefer email? <a href="mailto:you@domain.com" className="underline">you@domain.com</a>
+        Prefer email?{" "}
+        <a href="mailto:baansuluu22@gmail.com" className="underline">
+          baansuluu22@gmail.com
+        </a>
       </div>
     </section>
   );
