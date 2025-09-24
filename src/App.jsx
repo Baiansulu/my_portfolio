@@ -100,14 +100,6 @@ export default function App() {
           ))}
         </ul>
       </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="mx-auto max-w-5xl px-4 pb-24">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <p className="mt-2 text-slate-600">
-          Email: <a className="underline" href="mailto:baansuluu22@gmail.com">baansuluu22@gmail.com</a>
-        </p>
-      </section>
 <Contact />
       <footer className="border-t bg-white">
         <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-600">
