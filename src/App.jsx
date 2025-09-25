@@ -20,62 +20,67 @@ export default function App() {
       <Hero />
 
 
-      {/* Projects Section */}
-      <section id="projects" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold">Featured Projects</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="rounded-xl border bg-white p-4">
-            <h3 className="font-semibold">Project Name</h3>
-            <p className="mt-2 text-sm text-slate-600">One-line description of what you built.</p>
-            <div className="mt-4 flex gap-2">
-              <a className="rounded-md border px-3 py-1 text-sm hover:bg-slate-100" href="#">Live</a>
-              <a className="rounded-md border px-3 py-1 text-sm hover:bg-slate-100" href="#">Code</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
       {/* Experience Section */}
-      <section id="experience" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold">Work Experience</h2>
-        <div className="mt-4 space-y-6">
-          <div>
-            <h3 className="font-semibold">Frankly Speaking Agency — Intern</h3>
-            <p className="text-sm text-slate-500">Atlanta, GA · Dec 2022 – Feb 2023</p>
-            <ul className="list-disc pl-5 mt-2 text-slate-600 text-sm">
-              <li>Supported development and optimization of web pages for marketing campaigns reaching 5,000+ users.</li>
-              <li>Improved UX with HTML, CSS, and JavaScript, reducing page load times by 15%.</li>
-              <li>Collaborated with cross-functional teams to deliver projects aligned with business goals.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<section id="experience" className="mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold mb-6">Work Experience</h2>
+  <div className="space-y-6">
+    <div className="border-l-4 border-sky-600 pl-4">
+      <h3 className="font-semibold">Frankly Speaking Agency — Intern</h3>
+      <p className="text-sm text-slate-500">Atlanta, GA · Dec 2022 – Feb 2023</p>
+      <ul className="list-disc pl-5 mt-2 text-slate-600 text-sm space-y-1">
+        <li>Supported development and optimization of web pages for marketing campaigns reaching 5,000+ users.</li>
+        <li>Improved UX with HTML, CSS, and JavaScript, reducing page load times by 15%.</li>
+        <li>Collaborated with cross-functional teams to deliver projects aligned with business goals.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-      {/* Education Section */}
-      <section id="education" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold">Education</h2>
-        <p className="mt-2 text-slate-600">
-          <strong>North American University — Texas</strong><br />
-          BA in Computer Science (Minor in Business Administration) — Expected 2026
-        </p>
-        <p className="text-sm text-slate-500 mt-1">
-          Relevant coursework: Web Development, Software Engineering, Database Systems
-        </p>
-      </section>
+{/* Education Section */}
+<section id="education" className="mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold mb-6">Education</h2>
+  <div className="border-l-4 border-sky-600 pl-4">
+    <h3 className="font-semibold">North American University — Texas</h3>
+    <p className="text-sm text-slate-500">BA in Computer Science (Minor in Business Administration) · Expected 2026</p>
+    <div className="mt-2 flex flex-wrap gap-2 text-sm text-slate-700">
+      <span className="rounded-full border px-3 py-1">Web Development</span>
+      <span className="rounded-full border px-3 py-1">Software Engineering</span>
+      <span className="rounded-full border px-3 py-1">Database Systems</span>
+    </div>
+  </div>
+</section>
 
-      {/* Skills Section */}
-      <section id="skills" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold">Skills</h2>
-        <ul className="mt-4 flex flex-wrap gap-2 text-sm text-slate-700">
-          {[
-            "HTML","CSS","JavaScript","SQL","Git/GitHub","Python","Ruby",
-            "Database Systems","Software Engineering","Web Development",
-            "Visual Studio Code","Microsoft Office"
-          ].map(s => (
-            <li key={s} className="rounded-full border px-3 py-1">{s}</li>
-          ))}
-        </ul>
-      </section>
+{/* Skills Section */}
+<section id="skills" className="mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold mb-6">Skills</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div>
+      <h3 className="font-medium text-slate-700 mb-2">Languages</h3>
+      <ul className="text-sm text-slate-600 space-y-1">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Ruby</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+    <div>
+      <h3 className="font-medium text-slate-700 mb-2">Tools</h3>
+      <ul className="text-sm text-slate-600 space-y-1">
+        <li>Git / GitHub</li>
+        <li>Visual Studio Code</li>
+        <li>Microsoft Office</li>
+      </ul>
+    </div>
+    <div>
+      <h3 className="font-medium text-slate-700 mb-2">Core Competencies</h3>
+      <ul className="text-sm text-slate-600 space-y-1">
+        <li>Software Engineering</li>
+        <li>Web Development</li>
+        <li>Database Systems</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <Contact />
       <footer className="border-t bg-white">
         <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-600">
