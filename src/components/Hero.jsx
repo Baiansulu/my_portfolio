@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<section className="mx-auto max-w-5xl px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <div className="flex justify-center md:justify-start">
         <img
   src="/profile.jpg"
