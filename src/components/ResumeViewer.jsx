@@ -9,7 +9,11 @@ export default function ResumeViewer({ open, onClose }) {
       aria-modal="true"
     >
       <div
-        className="relative w-[92vw] max-w-5xl bg-white shadow-2xl"
+        className="relative bg-white shadow-2xl"
+        style={{
+          width: "min(90vw, 700px)",    
+          aspectRatio: "8.5 / 11"      
+        }}
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -21,15 +25,18 @@ export default function ResumeViewer({ open, onClose }) {
         </button>
 
         <img
-  src="/resume.png"
-  alt="Résumé"
-  className="w-full h-full object-cover"
-/>
+          src="/resume.png"
+          alt="Résumé"
+          className="w-full h-full object-fill"
+        />
 
-
-        <div className="flex items-center justify-between px-4 py-2 text-sm text-slate-600">
-          <span>Preview</span>
-          <a className="underline" href="/_CV_.pdf" target="_blank" rel="noreferrer">
+        <div className="absolute bottom-2 right-3 text-xs text-slate-600">
+          <a
+            className="underline"
+            href="/_CV_.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             Open PDF in new tab
           </a>
         </div>
