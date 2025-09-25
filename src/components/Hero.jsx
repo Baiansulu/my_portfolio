@@ -3,10 +3,11 @@ export default function Hero() {
     <section className="mx-auto max-w-5xl px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div className="flex justify-center md:justify-start">
         <img
-          src="/profile.jpg"
-          alt="Baiansuluu Profile"
-          className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg"
-        />
+  src="/profile.jpg"
+  alt="Baiansuluu Profile"
+  className="w-60 h-60 md:w-80 md:h-80 rounded-lg object-cover shadow-lg"
+/>
+
       </div>
 
       <div>
