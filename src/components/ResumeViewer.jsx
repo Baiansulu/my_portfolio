@@ -3,13 +3,13 @@ export default function ResumeViewer({ open, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center"
+      className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="relative w-[90vw] max-w-4xl h-[90vh] bg-white shadow-2xl flex flex-col"
+        className="relative w-[92vw] max-w-5xl h-[88vh] bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -21,10 +21,9 @@ export default function ResumeViewer({ open, onClose }) {
         </button>
 
         <iframe
-          src="/_CV_.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+          src="/_CV_.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
           title="Résumé PDF"
           className="w-full h-full"
-          style={{ zoom: "0.9" }} 
         />
       </div>
     </div>
