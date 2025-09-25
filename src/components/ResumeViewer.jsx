@@ -9,7 +9,7 @@ export default function ResumeViewer({ open, onClose }) {
       aria-modal="true"
     >
       <div
-        className="relative w-[92vw] max-w-5xl h-[88vh] bg-white shadow-2xl"
+        className="relative w-[92vw] max-w-5xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -20,12 +20,18 @@ export default function ResumeViewer({ open, onClose }) {
           ✖
         </button>
 
-        <iframe
-          src="/_CV_.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=100"
-          title="Résumé PDF"
-          className="w-full h-full bg-white"
-          style={{ border: "none" }}
+        <img
+          src="/resume.png"
+          alt="Résumé"
+          className="max-h-[85vh] w-full object-contain bg-white"
         />
+
+        <div className="flex items-center justify-between px-4 py-2 text-sm text-slate-600">
+          <span>Preview</span>
+          <a className="underline" href="/_CV_.pdf" target="_blank" rel="noreferrer">
+            Open PDF in new tab
+          </a>
+        </div>
       </div>
     </div>
   );
