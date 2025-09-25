@@ -21,10 +21,11 @@ export default function ResumeViewer({ open, onClose }) {
         </button>
 
         <img
-          src="/resume.png"
-          alt="Résumé"
-          className="max-h-[85vh] w-full object-contain bg-white"
-        />
+  src="/resume.png"
+  alt="Résumé"
+  className="w-full h-full object-cover"
+/>
+
 
         <div className="flex items-center justify-between px-4 py-2 text-sm text-slate-600">
           <span>Preview</span>
