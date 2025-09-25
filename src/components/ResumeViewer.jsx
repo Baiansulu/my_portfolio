@@ -21,9 +21,10 @@ export default function ResumeViewer({ open, onClose }) {
         </button>
 
         <iframe
-          src="/_CV_.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit"
+          src="/_CV_.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=100"
           title="Résumé PDF"
-          className="w-full h-full"
+          className="w-full h-full bg-white"
+          style={{ border: "none" }}
         />
       </div>
     </div>
