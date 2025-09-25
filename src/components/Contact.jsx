@@ -6,11 +6,8 @@ export default function Contact() {
         I usually reply within 24–48 hours. Your info stays private.
       </p>
 
-      <form
-        action="https://formsubmit.co/baansuluu22@gmail.com"
-        method="POST"
-        className="grid gap-4"
-      >
+      <form action="https://formspree.io/f/your_form_id" method="POST" className="grid gap-4">
+
         <input
           type="text"
           name="_honey"
