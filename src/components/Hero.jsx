@@ -5,7 +5,7 @@ export default function Hero() {
         <img
   src="/profile.jpg"
   alt="Baiansuluu Profile"
-  className="w-60 h-60 md:w-80 md:h-80 rounded-lg object-cover shadow-lg"
+  className="w-72 h-80 md:w-96 md:h-[420px] object-cover shadow-lg"
 />
 
       </div>
