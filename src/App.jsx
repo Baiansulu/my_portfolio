@@ -18,31 +18,38 @@ export default function App() {
         <div className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
           <span className="font-bold">Baiansuluu</span>
           <nav className="flex gap-4 text-sm">
-            <a href="#experience" className="hover:underline">Experience</a>
-            <a href="#education" className="hover:underline">Education</a>
-            <a href="#skills" className="hover:underline">Skills</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
+  <a href="#experience" className="hover:underline transition-opacity hover:opacity-80">Experience</a>
+  <a href="#education"  className="hover:underline transition-opacity hover:opacity-80">Education</a>
+  <a href="#skills"     className="hover:underline transition-opacity hover:opacity-80">Skills</a>
+  <a href="#contact"    className="hover:underline transition-opacity hover:opacity-80">Contact</a>
+</nav>
+
         </div>
       </header>
 
       <Hero onShowResume={() => setResumeOpen(true)} />
 
       {/* Experience */}
-      <section id="experience" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold mb-6">Work Experience</h2>
-        <div className="space-y-6">
-          <div className="border-l-4 border-sky-600 pl-4">
-            <h3 className="font-semibold">Frankly Speaking Agency — Intern</h3>
-            <p className="text-sm text-slate-500">Atlanta, GA · Dec 2022 – Feb 2023</p>
-            <ul className="list-disc pl-5 mt-2 text-slate-600 text-sm space-y-1">
-              <li>Supported development and optimization of web pages for marketing campaigns reaching 5,000+ users.</li>
-              <li>Improved UX with HTML, CSS, and JavaScript, reducing page load times by 15%.</li>
-              <li>Collaborated with cross-functional teams to deliver projects aligned with business goals.</li>
-            </ul>
-          </div>
+      <section id="experience" className="scroll-mt-24 mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold mb-8">Work Experience</h2>
+  <ol className="relative border-s border-slate-200">
+    <li className="ms-6 pb-8 last:pb-0">
+      <span className="absolute -start-2.5 mt-1 h-5 w-5 rounded-full border-2 border-sky-600 bg-white"></span>
+      <div className="rounded-xl border bg-white p-4 shadow-sm">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 className="font-semibold">Frankly Speaking Agency — Intern</h3>
+          <span className="text-xs text-slate-500">Atlanta, GA · Dec 2022 – Feb 2023</span>
         </div>
-      </section>
+        <ul className="mt-3 list-disc pl-5 text-sm text-slate-700 space-y-1">
+          <li>Supported development and optimization of web pages for marketing campaigns reaching 5,000+ users.</li>
+          <li>Improved UX with HTML, CSS, and JavaScript, reducing page load times by 15%.</li>
+          <li>Collaborated with cross-functional teams to deliver projects aligned with business goals.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
 
       {/* Education */}
       <section id="education" className="mx-auto max-w-5xl px-4 pb-16">
