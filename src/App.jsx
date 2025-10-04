@@ -77,35 +77,54 @@ export default function App() {
 
 
       {/* Skills */}
-      <section id="skills" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold mb-6">Skills</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div>
-            <h3 className="font-medium text-slate-700 mb-2">Languages</h3>
-            <ul className="text-sm text-slate-600 space-y-1">
-              <li>HTML, CSS, JavaScript</li>
-              <li>Python, Ruby</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-medium text-slate-700 mb-2">Tools</h3>
-            <ul className="text-sm text-slate-600 space-y-1">
-              <li>Git / GitHub</li>
-              <li>Visual Studio Code</li>
-              <li>Microsoft Office</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-medium text-slate-700 mb-2">Core Competencies</h3>
-            <ul className="text-sm text-slate-600 space-y-1">
-              <li>Software Engineering</li>
-              <li>Web Development</li>
-              <li>Database Systems</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<section id="skills" className="scroll-mt-24 mx-auto max-w-5xl px-4 pb-16 fade-up">
+  <h2 className="text-2xl font-semibold mb-8">Skills</h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <article className="rounded-xl border bg-white p-4 shadow-sm">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-xl">💻</span>
+        <h3 className="font-medium text-slate-800">Languages</h3>
+      </div>
+      <div className="flex flex-wrap gap-2 text-sm">
+        {["HTML","CSS","JavaScript","Python","Ruby","SQL"].map(s => (
+          <span key={s} className="rounded-full border px-3 py-1 text-slate-700 hover:bg-slate-50 transition">
+            {s}
+          </span>
+        ))}
+      </div>
+    </article>
+
+    <article className="rounded-xl border bg-white p-4 shadow-sm">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-xl">🛠️</span>
+        <h3 className="font-medium text-slate-800">Tools</h3>
+      </div>
+      <div className="flex flex-wrap gap-2 text-sm">
+        {["Git / GitHub","Visual Studio Code","Microsoft Office"].map(s => (
+          <span key={s} className="rounded-full border px-3 py-1 text-slate-700 hover:bg-slate-50 transition">
+            {s}
+          </span>
+        ))}
+      </div>
+    </article>
+
+    <article className="rounded-xl border bg-white p-4 shadow-sm">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-xl">🏅</span>
+        <h3 className="font-medium text-slate-800">Core Competencies</h3>
+      </div>
+      <div className="flex flex-wrap gap-2 text-sm">
+        {["Software Engineering","Web Development","Database Systems"].map(s => (
+          <span key={s} className="rounded-full border px-3 py-1 text-slate-700 hover:bg-slate-50 transition">
+            {s}
+          </span>
+        ))}
+      </div>
+    </article>
+  </div>
+</section>
+
 
       <Contact />
 
