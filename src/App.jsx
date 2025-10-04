@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 border-b bg-white/80 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
         <div className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
           <span className="font-bold">Baiansuluu</span>
           <nav className="flex gap-4 text-sm">
