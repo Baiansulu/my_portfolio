@@ -83,7 +83,7 @@ export default function App() {
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <article className="rounded-xl border bg-white p-4 shadow-sm">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-xl">💻</span>
+        <span className="text-xl"></span>
         <h3 className="font-medium text-slate-800">Languages</h3>
       </div>
       <div className="flex flex-wrap gap-2 text-sm">
@@ -97,7 +97,7 @@ export default function App() {
 
     <article className="rounded-xl border bg-white p-4 shadow-sm">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-xl">🛠️</span>
+        <span className="text-xl"></span>
         <h3 className="font-medium text-slate-800">Tools</h3>
       </div>
       <div className="flex flex-wrap gap-2 text-sm">
@@ -111,7 +111,7 @@ export default function App() {
 
     <article className="rounded-xl border bg-white p-4 shadow-sm">
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-xl">🏅</span>
+        <span className="text-xl"></span>
         <h3 className="font-medium text-slate-800">Core Competencies</h3>
       </div>
       <div className="flex flex-wrap gap-2 text-sm">
