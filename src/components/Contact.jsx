@@ -1,41 +1,24 @@
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-md px-4 py-12">
+    <section id="contact" className="scroll-mt-24 fade-up mx-auto max-w-md px-4 py-12">
       <h2 className="text-2xl font-semibold mb-2">Contact</h2>
       <p className="text-slate-600 mb-6 text-sm">
         I usually reply within 24–48 hours. Your info stays private.
       </p>
 
-<form
-  action="https://formsubmit.co/baansuluu22@gmail.com"
-  method="POST"
-  className="grid gap-4"
->
-        <input
-          type="text"
-          name="_honey"
-          className="hidden"
-          tabIndex={-1}
-          autoComplete="off"
-        />
-
+      <form
+        action="https://formsubmit.co/baansuluu22@gmail.com"
+        method="POST"
+        className="grid gap-4"
+      >
+        <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://myportfolio-gilt-iota.vercel.app/#contact"
-        />
+        <input type="hidden" name="_next" value="https://myportfolio-gilt-iota.vercel.app/#contact" />
         <input type="hidden" name="_template" value="table" />
-        <input
-          type="hidden"
-          name="_subject"
-          value="New message from your portfolio"
-        />
+        <input type="hidden" name="_subject" value="New message from your portfolio" />
 
         <div>
-          <label htmlFor="name" className="block text-sm font-medium">
-            Name
-          </label>
+          <label htmlFor="name" className="block text-sm font-medium">Name</label>
           <input
             id="name"
             name="name"
@@ -48,9 +31,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium">
-            Email
-          </label>
+          <label htmlFor="email" className="block text-sm font-medium">Email</label>
           <input
             id="email"
             name="email"
@@ -63,9 +44,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium">
-            Message
-          </label>
+          <label htmlFor="message" className="block text-sm font-medium">Message</label>
           <textarea
             id="message"
             name="message"
@@ -85,10 +64,7 @@ export default function Contact() {
       </form>
 
       <div className="mt-6 text-xs text-slate-600">
-        Prefer email?{" "}
-        <a href="mailto:baansuluu22@gmail.com" className="underline">
-          baansuluu22@gmail.com
-        </a>
+        Prefer email? <a href="mailto:baansuluu22@gmail.com" className="underline">baansuluu22@gmail.com</a>
       </div>
     </section>
   );
