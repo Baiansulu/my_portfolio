@@ -52,18 +52,29 @@ export default function App() {
 
 
       {/* Education */}
-      <section id="education" className="mx-auto max-w-5xl px-4 pb-16">
-        <h2 className="text-2xl font-semibold mb-6">Education</h2>
-        <div className="border-l-4 border-sky-600 pl-4">
+<section id="education" className="scroll-mt-24 mx-auto max-w-5xl px-4 pb-16">
+  <h2 className="text-2xl font-semibold mb-8">Education</h2>
+  <ol className="relative border-s border-slate-200">
+    <li className="ms-6 pb-8 last:pb-0">
+      <span className="absolute -start-2.5 mt-1 h-5 w-5 rounded-full border-2 border-sky-600 bg-white"></span>
+      <div className="rounded-xl border bg-white p-4 shadow-sm">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="font-semibold">North American University — Texas</h3>
-          <p className="text-sm text-slate-500">BA in Computer Science (Minor in Business Administration) · Expected 2026</p>
-          <div className="mt-2 flex flex-wrap gap-2 text-sm text-slate-700">
-            <span className="rounded-full border px-3 py-1">Web Development</span>
-            <span className="rounded-full border px-3 py-1">Software Engineering</span>
-            <span className="rounded-full border px-3 py-1">Database Systems</span>
-          </div>
+          <span className="text-xs text-slate-500">Expected 2026</span>
         </div>
-      </section>
+        <p className="mt-1 text-sm text-slate-600">
+          BA in Computer Science (Minor in Business Administration)
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2 text-sm text-slate-700">
+          <span className="rounded-full border px-3 py-1">Web Development</span>
+          <span className="rounded-full border px-3 py-1">Software Engineering</span>
+          <span className="rounded-full border px-3 py-1">Database Systems</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
+
 
       {/* Skills */}
       <section id="skills" className="mx-auto max-w-5xl px-4 pb-16">
