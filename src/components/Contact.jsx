@@ -2,9 +2,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-24 fade-up mx-auto max-w-5xl px-4 py-16"
+      className="scroll-mt-24 fade-up mx-auto max-w-5xl px-4 py-16 grid gap-12 md:grid-cols-2"
     >
-      <div className="max-w-md">
+      {/* Left Column — Contact Form */}
+      <div>
         <h2 className="text-2xl font-semibold mb-2">Contact</h2>
         <p className="text-slate-600 mb-6 text-sm">
           I usually reply within 24–48 hours. Your info stays private.
@@ -15,14 +16,30 @@ export default function Contact() {
           method="POST"
           className="grid gap-4"
         >
-          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+          <input
+            type="text"
+            name="_honey"
+            className="hidden"
+            tabIndex={-1}
+            autoComplete="off"
+          />
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://myportfolio-gilt-iota.vercel.app/#contact" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://myportfolio-gilt-iota.vercel.app/#contact"
+          />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from your portfolio"
+          />
 
           <div>
-            <label htmlFor="name" className="block text-sm font-medium">Name</label>
+            <label htmlFor="name" className="block text-sm font-medium">
+              Name
+            </label>
             <input
               id="name"
               name="name"
@@ -35,7 +52,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium">
+              Email
+            </label>
             <input
               id="email"
               name="email"
@@ -48,7 +67,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium">Message</label>
+            <label htmlFor="message" className="block text-sm font-medium">
+              Message
+            </label>
             <textarea
               id="message"
               name="message"
@@ -73,6 +94,17 @@ export default function Contact() {
             baansuluu22@gmail.com
           </a>
         </div>
+      </div>
+
+      <div className="flex flex-col justify-center">
+        <h3 className="text-lg font-semibold mb-3 text-slate-800">
+          Let’s work together 
+        </h3>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          I'm always open to collaborating on meaningful projects, internships,
+          and junior developer opportunities. If my background aligns with what
+          you're looking for, I'd love to hear from you.
+        </p>
       </div>
     </section>
   );
