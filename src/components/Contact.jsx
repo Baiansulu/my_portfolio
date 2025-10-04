@@ -96,16 +96,18 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center">
-        <h3 className="text-lg font-semibold mb-3 text-slate-800">
-          Let’s work together 
-        </h3>
-        <p className="text-sm text-slate-600 leading-relaxed">
-          I'm always open to collaborating on meaningful projects, internships,
-          and junior developer opportunities. If my background aligns with what
-          you're looking for, I'd love to hear from you.
-        </p>
-      </div>
+<div className="flex flex-col justify-center bg-white rounded-2xl shadow-md p-6 md:p-8 border border-slate-200">
+  <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+     Let’s work together
+  </h3>
+  <div className="h-0.5 w-12 bg-sky-500 mb-4 rounded-full"></div>
+  <p className="text-sm text-slate-600 leading-relaxed">
+    I'm always open to collaborating on meaningful projects, internships, and
+    junior developer opportunities. If my background aligns with what you're
+    looking for, I'd love to hear from you.
+  </p>
+</div>
+
     </section>
   );
 }
